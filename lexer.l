@@ -1,5 +1,5 @@
 %{
-#include "simple_parser.tab.h"
+#include "parser.tab.h"
 %}
 %option noyywrap
 

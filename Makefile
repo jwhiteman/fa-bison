@@ -1,7 +1,7 @@
-doit: simple_lexer.l simple_parser.y
-	flex -o lex.yy.c simple_lexer.l
-	bison -d simple_parser.y
-	gcc lex.yy.c simple_parser.tab.c -o simple_parser
+doit: lexer.l parser.y
+	flex -o lex.yy.c lexer.l
+	bison -d parser.y
+	gcc lex.yy.c parser.tab.c -o parser
 
 clean:
-	rm -f *.c *.h simple_parser
+	rm -f *.c *.h parser
